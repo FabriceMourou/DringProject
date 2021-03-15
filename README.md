@@ -3,3 +3,5 @@
 # DRING
 
 ### Une application pour les cyclistes 
+
+![Acceuil](https://i.imgur.com/pfJJt8Z.png)
