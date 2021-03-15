@@ -31,6 +31,8 @@
 		E27FC11D2581326D0026C89B /* ImageTravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27FC11B2581326D0026C89B /* ImageTravelTableViewCell.xib */; };
 		E2AD0F6425823FF800355085 /* MultipleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AD0F6325823FF800355085 /* MultipleTableViewCell.swift */; };
 		E2B8377925792C0700AD55F0 /* ExpandableNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8377825792C0700AD55F0 /* ExpandableNames.swift */; };
+		E2DF4DAC25FF672D0078BF80 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF4DAB25FF672D0078BF80 /* NetworkManager.swift */; };
+		E2DF4DB025FF676F0078BF80 /* NetworkManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF4DAF25FF676F0078BF80 /* NetworkManagerError.swift */; };
 		E2E6C550257641CF00208764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E6C54F257641CF00208764 /* Main.storyboard */; };
 		E2E6C557257644E100208764 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6C556257644E100208764 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,9 +40,9 @@
 /* Begin PBXFileReference section */
 		E2300B732551980100BBB843 /* Little Birds.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Little Birds.ttf"; sourceTree = "<group>"; };
 		E2300B772551A12A00BBB843 /* CafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewController.swift; sourceTree = "<group>"; };
-		E2300B7A2551A1D400BBB843 /* BoulangerieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoulangerieViewController.swift; path = Dring/Controller/VC/BoulangerieViewController.swift; sourceTree = SOURCE_ROOT; };
-		E2300B7D2551A22800BBB843 /* RestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestoViewController.swift; path = Dring/Controller/VC/RestoViewController.swift; sourceTree = SOURCE_ROOT; };
-		E2300B802551A28000BBB843 /* BouclardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BouclardViewController.swift; path = Dring/Controller/VC/BouclardViewController.swift; sourceTree = SOURCE_ROOT; };
+		E2300B7A2551A1D400BBB843 /* BoulangerieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoulangerieViewController.swift; path = Dring/Controller/Boulangerie/BoulangerieViewController.swift; sourceTree = SOURCE_ROOT; };
+		E2300B7D2551A22800BBB843 /* RestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestoViewController.swift; path = Dring/Controller/Resto/RestoViewController.swift; sourceTree = SOURCE_ROOT; };
+		E2300B802551A28000BBB843 /* BouclardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BouclardViewController.swift; path = Dring/Controller/Bouclard/BouclardViewController.swift; sourceTree = SOURCE_ROOT; };
 		E2300B942552BB8C00BBB843 /* DringNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DringNavigationController.swift; path = Dring/View/DringNavigationController.swift; sourceTree = SOURCE_ROOT; };
 		E2300B9D25530F0900BBB843 /* CafeMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CafeMapsViewController.swift; path = Dring/Controller/maps/CafeMapsViewController.swift; sourceTree = SOURCE_ROOT; };
 		E2300BA02553100300BBB843 /* BoulangerieMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulangerieMapsViewController.swift; sourceTree = "<group>"; };
@@ -53,15 +55,17 @@
 		E26EB69F249908A900D81994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26EB6A2249908A900D81994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E26EB6A4249908A900D81994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E27E83AE257793B70018D533 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = Dring/Model/Profile/ProfileTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		E27FC0F9257FC36D0026C89B /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileCollectionViewCell.swift; path = Dring/Model/Profile/ProfileCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
-		E27FC0FA257FC36D0026C89B /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileCollectionViewCell.xib; path = Dring/Model/Profile/ProfileCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		E27E83AE257793B70018D533 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = Dring/Controller/Profile/ProfileTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		E27FC0F9257FC36D0026C89B /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileCollectionViewCell.swift; path = Dring/Controller/Profile/ProfileCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		E27FC0FA257FC36D0026C89B /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProfileCollectionViewCell.xib; path = Dring/Controller/Profile/ProfileCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		E27FC10F2581287F0026C89B /* TravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TravelViewController.swift; path = Dring/Controller/Travel/TravelViewController.swift; sourceTree = SOURCE_ROOT; };
-		E27FC11225812C1C0026C89B /* SimpleTravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleTravelTableViewCell.swift; path = Dring/Model/Travel/SimpleTravelTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		E27FC11225812C1C0026C89B /* SimpleTravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleTravelTableViewCell.swift; path = Dring/Controller/Travel/SimpleTravelTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		E27FC11A2581326D0026C89B /* ImageTravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTravelTableViewCell.swift; sourceTree = "<group>"; };
 		E27FC11B2581326D0026C89B /* ImageTravelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTravelTableViewCell.xib; sourceTree = "<group>"; };
 		E2AD0F6325823FF800355085 /* MultipleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTableViewCell.swift; sourceTree = "<group>"; };
-		E2B8377825792C0700AD55F0 /* ExpandableNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandableNames.swift; path = Dring/Model/Profile/ExpandableNames.swift; sourceTree = SOURCE_ROOT; };
+		E2B8377825792C0700AD55F0 /* ExpandableNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpandableNames.swift; path = Dring/Controller/Profile/ExpandableNames.swift; sourceTree = SOURCE_ROOT; };
+		E2DF4DAB25FF672D0078BF80 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		E2DF4DAF25FF676F0078BF80 /* NetworkManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerError.swift; sourceTree = "<group>"; };
 		E2E6C54F257641CF00208764 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E2E6C556257644E100208764 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,17 +90,6 @@
 				E2300BA02553100300BBB843 /* BoulangerieMapsViewController.swift */,
 			);
 			path = maps;
-			sourceTree = "<group>";
-		};
-		E2300BA4255310F200BBB843 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				E2300B802551A28000BBB843 /* BouclardViewController.swift */,
-				E2300B7D2551A22800BBB843 /* RestoViewController.swift */,
-				E2300B7A2551A1D400BBB843 /* BoulangerieViewController.swift */,
-				E2300B772551A12A00BBB843 /* CafeViewController.swift */,
-			);
-			path = VC;
 			sourceTree = "<group>";
 		};
 		E26EB68A249908A700D81994 = {
@@ -130,8 +123,8 @@
 		E26EB6AA249908DE00D81994 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E27FC120258132CE0026C89B /* Travel */,
-				E27FC11F2581329F0026C89B /* Profile */,
+				E2DF4DAB25FF672D0078BF80 /* NetworkManager.swift */,
+				E2DF4DAF25FF676F0078BF80 /* NetworkManagerError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,7 +145,10 @@
 				E2300B942552BB8C00BBB843 /* DringNavigationController.swift */,
 				E27FC124258133630026C89B /* Profile */,
 				E27FC123258133470026C89B /* Travel */,
-				E2300BA4255310F200BBB843 /* VC */,
+				E2DF4DAA25FF66600078BF80 /* Café */,
+				E2DF4DA925FF66540078BF80 /* Boulangerie */,
+				E2DF4DA825FF66480078BF80 /* Resto */,
+				E2DF4DA725FF661B0078BF80 /* Bouclard */,
 				E2300BA3255310CD00BBB843 /* maps */,
 			);
 			path = Controller;
@@ -169,20 +165,10 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E27FC11F2581329F0026C89B /* Profile */ = {
+		E27FC123258133470026C89B /* Travel */ = {
 			isa = PBXGroup;
 			children = (
-				E27E83AE257793B70018D533 /* ProfileTableViewCell.swift */,
-				E27FC0F9257FC36D0026C89B /* ProfileCollectionViewCell.swift */,
-				E27FC0FA257FC36D0026C89B /* ProfileCollectionViewCell.xib */,
-				E2B8377825792C0700AD55F0 /* ExpandableNames.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		E27FC120258132CE0026C89B /* Travel */ = {
-			isa = PBXGroup;
-			children = (
+				E27FC10F2581287F0026C89B /* TravelViewController.swift */,
 				E27FC11225812C1C0026C89B /* SimpleTravelTableViewCell.swift */,
 				E27FC11A2581326D0026C89B /* ImageTravelTableViewCell.swift */,
 				E27FC11B2581326D0026C89B /* ImageTravelTableViewCell.xib */,
@@ -191,20 +177,49 @@
 			path = Travel;
 			sourceTree = "<group>";
 		};
-		E27FC123258133470026C89B /* Travel */ = {
-			isa = PBXGroup;
-			children = (
-				E27FC10F2581287F0026C89B /* TravelViewController.swift */,
-			);
-			path = Travel;
-			sourceTree = "<group>";
-		};
 		E27FC124258133630026C89B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				E2E6C556257644E100208764 /* ProfileViewController.swift */,
+				E27E83AE257793B70018D533 /* ProfileTableViewCell.swift */,
+				E27FC0F9257FC36D0026C89B /* ProfileCollectionViewCell.swift */,
+				E27FC0FA257FC36D0026C89B /* ProfileCollectionViewCell.xib */,
+				E2B8377825792C0700AD55F0 /* ExpandableNames.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		E2DF4DA725FF661B0078BF80 /* Bouclard */ = {
+			isa = PBXGroup;
+			children = (
+				E2300B802551A28000BBB843 /* BouclardViewController.swift */,
+			);
+			path = Bouclard;
+			sourceTree = "<group>";
+		};
+		E2DF4DA825FF66480078BF80 /* Resto */ = {
+			isa = PBXGroup;
+			children = (
+				E2300B7D2551A22800BBB843 /* RestoViewController.swift */,
+			);
+			path = Resto;
+			sourceTree = "<group>";
+		};
+		E2DF4DA925FF66540078BF80 /* Boulangerie */ = {
+			isa = PBXGroup;
+			children = (
+				E2300B7A2551A1D400BBB843 /* BoulangerieViewController.swift */,
+			);
+			path = Boulangerie;
+			sourceTree = "<group>";
+		};
+		E2DF4DAA25FF66600078BF80 /* Café */ = {
+			isa = PBXGroup;
+			children = (
+				E2300B772551A12A00BBB843 /* CafeViewController.swift */,
+			);
+			name = "Café";
+			path = "Café";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,11 +299,13 @@
 				E27FC11C2581326D0026C89B /* ImageTravelTableViewCell.swift in Sources */,
 				E2AD0F6425823FF800355085 /* MultipleTableViewCell.swift in Sources */,
 				E2300BA62553112B00BBB843 /* BouclardMapsViewController.swift in Sources */,
+				E2DF4DAC25FF672D0078BF80 /* NetworkManager.swift in Sources */,
 				E2300BAA2553134400BBB843 /* RestoMapsViewController.swift in Sources */,
 				E27FC0FB257FC36D0026C89B /* ProfileCollectionViewCell.swift in Sources */,
 				E2300B7E2551A22800BBB843 /* RestoViewController.swift in Sources */,
 				E27E83AF257793B70018D533 /* ProfileTableViewCell.swift in Sources */,
 				E2300BA12553100300BBB843 /* BoulangerieMapsViewController.swift in Sources */,
+				E2DF4DB025FF676F0078BF80 /* NetworkManagerError.swift in Sources */,
 				E2300B812551A28000BBB843 /* BouclardViewController.swift in Sources */,
 				E27FC1102581287F0026C89B /* TravelViewController.swift in Sources */,
 				E2300BAE25531B1500BBB843 /* BaseViewController.swift in Sources */,
