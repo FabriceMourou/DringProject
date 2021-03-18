@@ -38,8 +38,6 @@ class PlaceSearchManager {
             case .success(let response):
                 guard let results = response.results?.first?.name else { return }
                 
-                
-            
                 completion(.success(results))
                 
                 
@@ -67,14 +65,6 @@ class PlaceSearchManager {
         
         return urlComponents.url
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     
 }

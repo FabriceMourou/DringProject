@@ -10,8 +10,6 @@ class CafeMapsViewController: UIViewController {
     
 
  
-    @IBAction func dismiss() {
-        dismiss(animated: true, completion: nil)
-    }
+ 
     
 }
