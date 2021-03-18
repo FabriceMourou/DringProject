@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20D48A025FFA8A700D827DA /* PlaceSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20D489F25FFA8A700D827DA /* PlaceSearchResponse.swift */; };
+		E20D48A325FFC6B400D827DA /* PlaceSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20D48A225FFC6B400D827DA /* PlaceSearchManager.swift */; };
 		E2300B742551980100BBB843 /* Little Birds.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2300B732551980100BBB843 /* Little Birds.ttf */; };
 		E2300B782551A12A00BBB843 /* CafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300B772551A12A00BBB843 /* CafeViewController.swift */; };
 		E2300B7B2551A1D400BBB843 /* BoulangerieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300B7A2551A1D400BBB843 /* BoulangerieViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E20D489F25FFA8A700D827DA /* PlaceSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearchResponse.swift; sourceTree = "<group>"; };
+		E20D48A225FFC6B400D827DA /* PlaceSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaceSearchManager.swift; path = "Dring/Controller/Café/PlaceSearchManager.swift"; sourceTree = SOURCE_ROOT; };
 		E2300B732551980100BBB843 /* Little Birds.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Little Birds.ttf"; sourceTree = "<group>"; };
 		E2300B772551A12A00BBB843 /* CafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewController.swift; sourceTree = "<group>"; };
 		E2300B7A2551A1D400BBB843 /* BoulangerieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BoulangerieViewController.swift; path = Dring/Controller/Boulangerie/BoulangerieViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -123,8 +127,10 @@
 		E26EB6AA249908DE00D81994 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E20D48A225FFC6B400D827DA /* PlaceSearchManager.swift */,
 				E2DF4DAB25FF672D0078BF80 /* NetworkManager.swift */,
 				E2DF4DAF25FF676F0078BF80 /* NetworkManagerError.swift */,
+				E20D489F25FFA8A700D827DA /* PlaceSearchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,12 +311,14 @@
 				E2300B7E2551A22800BBB843 /* RestoViewController.swift in Sources */,
 				E27E83AF257793B70018D533 /* ProfileTableViewCell.swift in Sources */,
 				E2300BA12553100300BBB843 /* BoulangerieMapsViewController.swift in Sources */,
+				E20D48A325FFC6B400D827DA /* PlaceSearchManager.swift in Sources */,
 				E2DF4DB025FF676F0078BF80 /* NetworkManagerError.swift in Sources */,
 				E2300B812551A28000BBB843 /* BouclardViewController.swift in Sources */,
 				E27FC1102581287F0026C89B /* TravelViewController.swift in Sources */,
 				E2300BAE25531B1500BBB843 /* BaseViewController.swift in Sources */,
 				E2B8377925792C0700AD55F0 /* ExpandableNames.swift in Sources */,
 				E2300B7B2551A1D400BBB843 /* BoulangerieViewController.swift in Sources */,
+				E20D48A025FFA8A700D827DA /* PlaceSearchResponse.swift in Sources */,
 				E2300B782551A12A00BBB843 /* CafeViewController.swift in Sources */,
 				E26EB697249908A700D81994 /* AppDelegate.swift in Sources */,
 				E27FC11325812C1C0026C89B /* SimpleTravelTableViewCell.swift in Sources */,
