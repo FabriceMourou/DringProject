@@ -1,6 +1,6 @@
 import UIKit
 
-class CafeMapsViewController: UIViewController {
+class CafePlaceListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

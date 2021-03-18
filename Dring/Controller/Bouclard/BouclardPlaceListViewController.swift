@@ -1,7 +1,7 @@
 
 import UIKit
 
-class BouclardMapsViewController: UIViewController {
+class BouclardPlaceListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

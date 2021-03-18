@@ -1,7 +1,7 @@
 
 import UIKit
 
-class RestoMapsViewController: UIViewController {
+class RestoPlaceListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

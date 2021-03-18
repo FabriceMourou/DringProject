@@ -1,6 +1,6 @@
 import UIKit
 
-class BoulangerieMapsViewController: UIViewController {
+class BoulangeriePlaceListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

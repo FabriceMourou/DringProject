@@ -15,10 +15,10 @@
 		E2300B7E2551A22800BBB843 /* RestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300B7D2551A22800BBB843 /* RestoViewController.swift */; };
 		E2300B812551A28000BBB843 /* BouclardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300B802551A28000BBB843 /* BouclardViewController.swift */; };
 		E2300B952552BB8C00BBB843 /* DringNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300B942552BB8C00BBB843 /* DringNavigationController.swift */; };
-		E2300B9E25530F0900BBB843 /* CafeMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300B9D25530F0900BBB843 /* CafeMapsViewController.swift */; };
-		E2300BA12553100300BBB843 /* BoulangerieMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300BA02553100300BBB843 /* BoulangerieMapsViewController.swift */; };
-		E2300BA62553112B00BBB843 /* BouclardMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300BA52553112B00BBB843 /* BouclardMapsViewController.swift */; };
-		E2300BAA2553134400BBB843 /* RestoMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300BA92553134400BBB843 /* RestoMapsViewController.swift */; };
+		E2300B9E25530F0900BBB843 /* CafePlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300B9D25530F0900BBB843 /* CafePlaceListViewController.swift */; };
+		E2300BA12553100300BBB843 /* BoulangeriePlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300BA02553100300BBB843 /* BoulangeriePlaceListViewController.swift */; };
+		E2300BA62553112B00BBB843 /* BouclardPlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300BA52553112B00BBB843 /* BouclardPlaceListViewController.swift */; };
+		E2300BAA2553134400BBB843 /* RestoPlaceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300BA92553134400BBB843 /* RestoPlaceListViewController.swift */; };
 		E2300BAE25531B1500BBB843 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2300BAD25531B1500BBB843 /* BaseViewController.swift */; };
 		E26EB697249908A700D81994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EB696249908A700D81994 /* AppDelegate.swift */; };
 		E26EB699249908A700D81994 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26EB698249908A700D81994 /* SceneDelegate.swift */; };
@@ -48,10 +48,10 @@
 		E2300B7D2551A22800BBB843 /* RestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestoViewController.swift; path = Dring/Controller/Resto/RestoViewController.swift; sourceTree = SOURCE_ROOT; };
 		E2300B802551A28000BBB843 /* BouclardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BouclardViewController.swift; path = Dring/Controller/Bouclard/BouclardViewController.swift; sourceTree = SOURCE_ROOT; };
 		E2300B942552BB8C00BBB843 /* DringNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DringNavigationController.swift; path = Dring/View/DringNavigationController.swift; sourceTree = SOURCE_ROOT; };
-		E2300B9D25530F0900BBB843 /* CafeMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CafeMapsViewController.swift; path = Dring/Controller/maps/CafeMapsViewController.swift; sourceTree = SOURCE_ROOT; };
-		E2300BA02553100300BBB843 /* BoulangerieMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulangerieMapsViewController.swift; sourceTree = "<group>"; };
-		E2300BA52553112B00BBB843 /* BouclardMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouclardMapsViewController.swift; sourceTree = SOURCE_ROOT; };
-		E2300BA92553134400BBB843 /* RestoMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoMapsViewController.swift; sourceTree = "<group>"; };
+		E2300B9D25530F0900BBB843 /* CafePlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CafePlaceListViewController.swift; path = "Dring/Controller/Café/CafePlaceListViewController.swift"; sourceTree = SOURCE_ROOT; };
+		E2300BA02553100300BBB843 /* BoulangeriePlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoulangeriePlaceListViewController.swift; sourceTree = "<group>"; };
+		E2300BA52553112B00BBB843 /* BouclardPlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BouclardPlaceListViewController.swift; path = Dring/Controller/Bouclard/BouclardPlaceListViewController.swift; sourceTree = SOURCE_ROOT; };
+		E2300BA92553134400BBB843 /* RestoPlaceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoPlaceListViewController.swift; sourceTree = "<group>"; };
 		E2300BAD25531B1500BBB843 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Dring/View/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		E26EB693249908A700D81994 /* Dring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26EB696249908A700D81994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,17 +85,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E2300BA3255310CD00BBB843 /* maps */ = {
-			isa = PBXGroup;
-			children = (
-				E2300BA52553112B00BBB843 /* BouclardMapsViewController.swift */,
-				E2300BA92553134400BBB843 /* RestoMapsViewController.swift */,
-				E2300B9D25530F0900BBB843 /* CafeMapsViewController.swift */,
-				E2300BA02553100300BBB843 /* BoulangerieMapsViewController.swift */,
-			);
-			path = maps;
-			sourceTree = "<group>";
-		};
 		E26EB68A249908A700D81994 = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +144,6 @@
 				E2DF4DA925FF66540078BF80 /* Boulangerie */,
 				E2DF4DA825FF66480078BF80 /* Resto */,
 				E2DF4DA725FF661B0078BF80 /* Bouclard */,
-				E2300BA3255310CD00BBB843 /* maps */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				E2300B802551A28000BBB843 /* BouclardViewController.swift */,
+				E2300BA52553112B00BBB843 /* BouclardPlaceListViewController.swift */,
 			);
 			path = Bouclard;
 			sourceTree = "<group>";
@@ -207,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				E2300B7D2551A22800BBB843 /* RestoViewController.swift */,
+				E2300BA92553134400BBB843 /* RestoPlaceListViewController.swift */,
 			);
 			path = Resto;
 			sourceTree = "<group>";
@@ -215,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				E2300B7A2551A1D400BBB843 /* BoulangerieViewController.swift */,
+				E2300BA02553100300BBB843 /* BoulangeriePlaceListViewController.swift */,
 			);
 			path = Boulangerie;
 			sourceTree = "<group>";
@@ -223,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				E2300B772551A12A00BBB843 /* CafeViewController.swift */,
+				E2300B9D25530F0900BBB843 /* CafePlaceListViewController.swift */,
 			);
 			name = "Café";
 			path = "Café";
@@ -304,13 +296,13 @@
 			files = (
 				E27FC11C2581326D0026C89B /* ImageTravelTableViewCell.swift in Sources */,
 				E2AD0F6425823FF800355085 /* MultipleTableViewCell.swift in Sources */,
-				E2300BA62553112B00BBB843 /* BouclardMapsViewController.swift in Sources */,
+				E2300BA62553112B00BBB843 /* BouclardPlaceListViewController.swift in Sources */,
 				E2DF4DAC25FF672D0078BF80 /* NetworkManager.swift in Sources */,
-				E2300BAA2553134400BBB843 /* RestoMapsViewController.swift in Sources */,
+				E2300BAA2553134400BBB843 /* RestoPlaceListViewController.swift in Sources */,
 				E27FC0FB257FC36D0026C89B /* ProfileCollectionViewCell.swift in Sources */,
 				E2300B7E2551A22800BBB843 /* RestoViewController.swift in Sources */,
 				E27E83AF257793B70018D533 /* ProfileTableViewCell.swift in Sources */,
-				E2300BA12553100300BBB843 /* BoulangerieMapsViewController.swift in Sources */,
+				E2300BA12553100300BBB843 /* BoulangeriePlaceListViewController.swift in Sources */,
 				E20D48A325FFC6B400D827DA /* PlaceSearchManager.swift in Sources */,
 				E2DF4DB025FF676F0078BF80 /* NetworkManagerError.swift in Sources */,
 				E2300B812551A28000BBB843 /* BouclardViewController.swift in Sources */,
@@ -324,7 +316,7 @@
 				E27FC11325812C1C0026C89B /* SimpleTravelTableViewCell.swift in Sources */,
 				E2300B952552BB8C00BBB843 /* DringNavigationController.swift in Sources */,
 				E2E6C557257644E100208764 /* ProfileViewController.swift in Sources */,
-				E2300B9E25530F0900BBB843 /* CafeMapsViewController.swift in Sources */,
+				E2300B9E25530F0900BBB843 /* CafePlaceListViewController.swift in Sources */,
 				E26EB699249908A700D81994 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
