@@ -38,6 +38,7 @@
 		E2DF4DB025FF676F0078BF80 /* NetworkManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DF4DAF25FF676F0078BF80 /* NetworkManagerError.swift */; };
 		E2E6C550257641CF00208764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E6C54F257641CF00208764 /* Main.storyboard */; };
 		E2E6C557257644E100208764 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E6C556257644E100208764 /* ProfileViewController.swift */; };
+		E2E86D0F2604EBBC00DE0156 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E86D0E2604EBBC00DE0156 /* AlertManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		E2DF4DAF25FF676F0078BF80 /* NetworkManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerError.swift; sourceTree = "<group>"; };
 		E2E6C54F257641CF00208764 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E2E6C556257644E100208764 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E2E86D0E2604EBBC00DE0156 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertManager.swift; path = "Dring/Controller/Café/AlertManager.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		E26EB6AA249908DE00D81994 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2E86D0E2604EBBC00DE0156 /* AlertManager.swift */,
 				E20D48A225FFC6B400D827DA /* PlaceSearchManager.swift */,
 				E2DF4DAB25FF672D0078BF80 /* NetworkManager.swift */,
 				E2DF4DAF25FF676F0078BF80 /* NetworkManagerError.swift */,
@@ -315,6 +318,7 @@
 				E2300B7B2551A1D400BBB843 /* BoulangerieViewController.swift in Sources */,
 				E20D48A025FFA8A700D827DA /* PlaceSearchResponse.swift in Sources */,
 				E2300B782551A12A00BBB843 /* CafeViewController.swift in Sources */,
+				E2E86D0F2604EBBC00DE0156 /* AlertManager.swift in Sources */,
 				E26EB697249908A700D81994 /* AppDelegate.swift in Sources */,
 				E27FC11325812C1C0026C89B /* SimpleTravelTableViewCell.swift in Sources */,
 				E2300B952552BB8C00BBB843 /* DringNavigationController.swift in Sources */,

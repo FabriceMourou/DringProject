@@ -2,17 +2,21 @@ import UIKit
 
 class CafePlaceListViewController: UIViewController {
     
+    var places: [PlaceResult] = []
     
-    @IBOutlet weak var cafeTableView: UITableView!
+    
+    @IBOutlet weak var placeTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      
     }
     
-
- 
+    var place: [String] = [] {
+        didSet {
+            placeTableView.reloadData()
+        }
+    }
  
     
 }
@@ -23,12 +27,17 @@ extension CafePlaceListViewController: UITableViewDelegate {
 
 extension CafePlaceListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        
+        place.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cafeTableViewCell") as! CafeTableViewCell
         
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cafeTableViewCell") else {
+            return UITableViewCell()
+        }
+        
+        cell.textLabel?.text = place[indexPath.row]
         return cell 
     }
     

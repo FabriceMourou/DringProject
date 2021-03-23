@@ -20,7 +20,7 @@ class PlaceSearchManager {
     }
     
     
-    func fetchPlacesFrom(place: [String], completion: @escaping (Result<String, PlaceSearchManagerError>) -> Void) {
+    func fetchPlacesFrom(place: String, completion: @escaping (Result<String?, PlaceSearchManagerError>) -> Void) {
         
         guard !place.isEmpty else {
             completion(.failure(.failedToGetDataForPlace))
@@ -38,6 +38,8 @@ class PlaceSearchManager {
             case .success(let response):
                 guard let results = response.results?.first?.name else { return }
                 
+                
+                
                 completion(.success(results))
                 
                 
@@ -49,7 +51,7 @@ class PlaceSearchManager {
         
     }
     
-    private func getPlaceURL(place: [String]) -> URL? {
+    private func getPlaceURL(place: String) -> URL? {
         
         let placeQuery = place.reduce("") { (partialResult, iterationPlace) -> String in
             return "\(partialResult),\(iterationPlace)"

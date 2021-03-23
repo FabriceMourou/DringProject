@@ -11,10 +11,11 @@ import UIKit
 class CafeTableViewCell: UITableViewCell {
     
     
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var placeImage: UIImageView!
+    @IBOutlet weak var placeTitleLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
-    @IBOutlet weak var businessStatutsLabel: UILabel!
+    @IBOutlet weak var typesLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +25,10 @@ class CafeTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+    }
+    
+    func configure(place: PlaceResult) {
+        placeTitleLabel.text = place.name
     }
 
 }
